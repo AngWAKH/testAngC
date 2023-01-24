@@ -1,0 +1,54 @@
+<p>user works!</p>
+
+
+<p><b>Name : </b>{{name}}</p> <p><b>from : </b>{{location}}</p>
+<p><b>Status : </b>{{getStatus()}}</p>
+
+<!-- pour déclarer un boutton  -->
+<button type="button"  class="btn btn-danger" (click)="getMessage()">SAVE</button>
+
+<button type="button"   class="btn btn-outline-success" (click)="getWakhsas()">Enregistrer</button>
+
+<button type="button" class="btn btn-primary">wak</button>
+
+<button type="button" class="btn btn-info">INFOS</button>
+<button type="button" class="btn btn-primary btn-lg"> WAKHSAS</button>
+
+<button type="button" class="btn btn-primary btn-sm">WAKHSAS</button>
+<button type="button" class="btn btn-primary btn-lg">SAVE</button>
+
+<!--<div class="row">
+  <div class="col">
+  <div class="card">
+    <div class="card-header">
+      <h4 class="text-center">tow way binding</h4>
+    </div>
+    <div class="card-body">
+      <input type="text" class="form-control" [(ngModel)]> {{ Message }}
+    </div>
+  </div>
+  </div>
+</div>-->
+<div class="row d-flex justify-content-center">
+  <button type="button" class="btn btn-link" (click)="goToRegister()" > Go To Register</button>
+</div>
+
+<div class="row">
+  <table class="table text-center">
+    <thead class="table-secondary">
+    <tr>
+      <th>Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of tablefruit">
+      <td>{{item.productName}}</td>
+      <td>{{item.productQuantity}}</td>
+      <td>{{item.productPrice}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
